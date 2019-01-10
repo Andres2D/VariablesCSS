@@ -1,0 +1,40 @@
+/* Responisve web designs
+*/
+:root {
+    --font-size: 2em;
+    --column-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: var(--font-size);
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: var(--column-size);
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+/*
+    Alteración de tamaños del h1, dependiendo el ancho de la pantalla
+*/
+@media screen and (min-width: 1024px) {
+    h1 {
+        --font-size: 5em;
+    }
+
+    .column {
+        --column-size: 33.33%
+    }
+}

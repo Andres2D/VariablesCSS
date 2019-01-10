@@ -1,0 +1,50 @@
+/*
+    Las ariables CSS tienen Cascada y Herencia
+*/
+
+/*
+    Las variables CSS son espacios en memoria que almacenan un valor
+    y ese valor puede ser recuperado
+*/
+
+/*
+    se definien con "--"
+*/
+
+/*
+    Recomendado crear las variables en los elementos globales, elemento de mayor nivel = :root
+*/
+
+:root {
+    --color: red;
+    --link-color: blue;
+    --bg-color: yellow;
+    --box-shadow: 2px 2px 5px #000;
+}
+
+html {
+   /* background: var(--bg-color);*/
+}
+
+
+body {
+    
+}
+
+h1 {
+    box-shadow: var(--box-shadow);
+}
+
+/*a{
+    color: var(--link-color);
+}*/
+
+p {
+    color: var(--color);
+}
+
+/*
+    Fallback: Se le manda un valor a tomar en caso de que no encuentre la propiedad
+    declarada: Ej -> color: var(--background, yellow)
+     - Fallback puede ser otra variable declarada
+*/

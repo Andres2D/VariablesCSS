@@ -1,0 +1,23 @@
+/*
+    Variables CSS - Scope
+
+    Tienen scope de DOM
+*/
+
+p {
+    color: var(--color);
+}
+
+article {
+    --color: red;
+}
+
+/*Se puede acceder a una variable CSS que esté en otro archivo,
+  pero los dos archivos deben estar referenciados en el mismo html*/
+a {
+    color: var(--link-color);
+}
+
+section {
+    --color: green;
+}
